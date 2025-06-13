@@ -91,6 +91,17 @@
               "src/styles.less"
             ]
           }
+        },
+        "e2e": {
+          "builder": "playwright-ng-schematics:playwright",
+          "options": {
+            "devServerTarget": "my-app:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "my-app:serve:production"
+            }
+          }
         }
       }
     }
